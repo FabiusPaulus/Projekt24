@@ -1,0 +1,6 @@
+import csv
+with open ('C:/Users/User/Desktop/MR/chronic_kidney_disease2.csv', 'r') as nieren_datei:
+    reader = csv.reader(nieren_datei, delimiter=',')
+    kopfzeile = next(reader)
+    for zeile in reader: 
+      print(zeile)  
